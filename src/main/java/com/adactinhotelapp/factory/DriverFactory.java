@@ -43,6 +43,9 @@ public class DriverFactory {
 			throw new FrameworkException("Invalid Browser Exception");
 		}
 		
+		driver.get(configProp.getProperty("url"));
+		driver.manage().window().maximize();
+		
 		return driver;
 		
 	}
