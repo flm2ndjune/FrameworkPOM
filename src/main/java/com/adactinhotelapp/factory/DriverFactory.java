@@ -1,30 +1,35 @@
 package com.adactinhotelapp.factory;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.adactinhotelapp.exceptions.FrameworkException;
+import com.aventstack.chaintest.plugins.ChainTestListener;
 
 public class DriverFactory {
 	
 	public WebDriver driver;
-	public Properties configProp;
+	public static Properties configProp;
 	
 	public WebDriver initDriver(Properties configProp)
 	{
 		String browserName=configProp.getProperty("browser");
+		ChainTestListener.log("Starting browser  "+browserName);
 		
 		switch (browserName.toLowerCase()) {
 		case "chrome" :
 			driver=new ChromeDriver();
-			
+			ChainTestListener.log("Chrome borwser has been started");
 			break;
 
 		case "firefox" :
@@ -44,6 +49,7 @@ public class DriverFactory {
 		}
 		
 		driver.get(configProp.getProperty("url"));
+		ChainTestListener.log("App has been launched using url "+configProp.getProperty("url"));
 		driver.manage().window().maximize();
 		
 		return driver;
@@ -67,10 +73,15 @@ public class DriverFactory {
 			e.printStackTrace();
 		}
 		
-		
+		ChainTestListener.log("Properties file has been initialized");
 		return configProp;
 		
 	}
+	
+	public  File getScreenshotFile() {
+		File srcFile=((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		return srcFile;
+		}
 	
 
 }

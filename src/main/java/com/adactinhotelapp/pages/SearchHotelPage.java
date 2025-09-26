@@ -2,6 +2,8 @@ package com.adactinhotelapp.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import com.adactinhotelapp.utils.ElementUtils;
 
@@ -14,7 +16,9 @@ public class SearchHotelPage extends BasePage {
 	
 		//By locators 
 	
-	private By locationDropdown=By.xpath("//select[@name='location']");
+	//private By locationDropdown=By.xpath("//select[@name='location']");
+	@FindBy(xpath = "//select[@name='location']")
+	private WebElement locationDropdown;
 	
 	
 	public SearchHotelPage(WebDriver driver) {
@@ -26,7 +30,8 @@ public class SearchHotelPage extends BasePage {
 	
 	public void locationDropdown(String option)
 	{
-		elementUtils.getElement(locationDropdown).sendKeys(option);
+		//elementUtils.getElement(locationDropdown).sendKeys(option);
+		locationDropdown.sendKeys(option);
 	}
 	
 		

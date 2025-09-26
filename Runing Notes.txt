@@ -1,0 +1,51 @@
+
+***************************************
+Selenium Season -3
+***************************************
+
+-----------------------------------------
+Day60 - 26th September  - Friday
+----------------------------------------- 
+
+standard POM implementation :
+
+Element Locators : 
+
+private final By usernameTextbox=By.xpath("//input[@name='username']");
+
+initialization :
+
+done using findElement()
+
+Action Methods : 
+
+public void usernameTextbox(String text)
+	{
+		elementUtils.getElement(usernameTextbox).sendKeys(text);
+	}
+	
+
+POM implementation using Page Factory: A more conveninent Implementation
+
+Elements  : 
+
+@FindBy Annotation 
+
+Initialization :
+
+initElements() --> static method present Page Factory
+
+
+Lazy Initlization : This will improve performance , especially on pages with many elements 
+
+@CacheLookUp annotation 
+
+**********************************
+Reporting Mechanism
+**********************************
+3rd Party 
+
+Extent Reports / ChainTest reports 
+
+Deprecation Notice
+ExtentReports is being sunset and will be replaced by ChainTest Framework.
