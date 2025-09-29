@@ -126,22 +126,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateSearchHotelTest({Location=Sydney})">
-                  </a> <!-- validateSearchHotelTest({Location=Sydney}) -->
-                  <span class="method-name">validateSearchHotelTest</span>
-                  <span class="parameters">({Location=Sydney})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -151,6 +135,22 @@
                   </a> <!-- validateLoginTest({Username=reyaz0806, Password=reyaz123}) -->
                   <span class="method-name">validateLoginTest</span>
                   <span class="parameters">({Username=reyaz0806, Password=reyaz123})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSearchHotelTest({Location=Sydney})">
+                  </a> <!-- validateSearchHotelTest({Location=Sydney}) -->
+                  <span class="method-name">validateSearchHotelTest</span>
+                  <span class="parameters">({Location=Sydney})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -165,6 +165,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.adactinhotelapp.listeners.TestNGListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Regression Test &quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF&quot;/&gt;
@@ -210,18 +213,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateSearchHotelTest')
-data.setCell(0, 2, 'com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF')
-data.setCell(0, 3, 2508);
+data.setCell(0, 1, 'validateLoginTest')
+data.setCell(0, 2, 'com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF')
+data.setCell(0, 3, 1734);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateLoginTest')
-data.setCell(1, 2, 'com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF')
-data.setCell(1, 3, 1981);
+data.setCell(1, 1, 'validateSearchHotelTest')
+data.setCell(1, 2, 'com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF')
+data.setCell(1, 3, 1603);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -263,37 +266,37 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">appLaunch</span>
-                <span class="method-start">828 ms</span>
+                <span class="method-start">1261 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateLoginTest({Username=reyaz0806, Password=reyaz123})</span>
-                <span class="method-start">10628 ms</span>
+                <span class="method-start">5729 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser([TestResult name=validateLoginTest status=SUCCESS method=ValidateLoginUsingPOMUsingPF.validateLoginT...)</span>
-                <span class="method-start">12616 ms</span>
+                <span class="method-start">7477 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">appLaunch</span>
-                <span class="method-start">16072 ms</span>
+                <span class="method-start">10986 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateSearchHotelTest({Location=Sydney})</span>
-                <span class="method-start">27073 ms</span>
+                <span class="method-start">15052 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser([TestResult name=validateSearchHotelTest status=SUCCESS method=ValidateSearchHotelPagePOMUsingPF.val...)</span>
-                <span class="method-start">29582 ms</span>
+                <span class="method-start">16658 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">33021 ms</span>
+                <span class="method-start">19897 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

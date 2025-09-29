@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-26T21:16:20 IST" name="Suite" finished-at="2025-09-26T21:16:56 IST" duration-ms="36037">
+  <suite started-at="2025-09-29T20:56:00 IST" name="Suite" finished-at="2025-09-29T20:56:23 IST" duration-ms="22931">
     <groups>
     </groups>
-    <test started-at="2025-09-26T21:16:20 IST" name="Regression Test " finished-at="2025-09-26T21:16:56 IST" duration-ms="36037">
+    <test started-at="2025-09-29T20:56:00 IST" name="Regression Test " finished-at="2025-09-29T20:56:23 IST" duration-ms="22931">
       <class name="com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF">
-        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF@14bdbc74]" started-at="2025-09-26T21:16:36 IST" name="appLaunch" finished-at="2025-09-26T21:16:47 IST" duration-ms="11001" status="PASS">
+        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF@2aa6311a]" started-at="2025-09-29T20:56:11 IST" name="appLaunch" finished-at="2025-09-29T20:56:15 IST" duration-ms="4063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appLaunch -->
-        <test-method signature="validateSearchHotelTest(java.util.HashMap)[pri:0, instance:com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF@14bdbc74]" started-at="2025-09-26T21:16:47 IST" name="validateSearchHotelTest" data-provider="getTestData" finished-at="2025-09-26T21:16:50 IST" duration-ms="2508" status="PASS">
+        <test-method signature="validateSearchHotelTest(java.util.HashMap)[pri:0, instance:com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF@2aa6311a]" started-at="2025-09-29T20:56:15 IST" name="validateSearchHotelTest" data-provider="getTestData" finished-at="2025-09-29T20:56:17 IST" duration-ms="1603" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,11 +22,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSearchHotelTest -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF@14bdbc74]" started-at="2025-09-26T21:16:50 IST" name="closeBrowser" finished-at="2025-09-26T21:16:53 IST" duration-ms="3439" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF@2aa6311a]" started-at="2025-09-29T20:56:17 IST" name="closeBrowser" finished-at="2025-09-29T20:56:20 IST" duration-ms="3235" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateSearchHotelTest status=SUCCESS method=ValidateSearchHotelPagePOMUsingPF.validateSearchHotelTest(java.util.HashMap)[pri:0, instance:com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF@14bdbc74] output={null}]]]>
+                <![CDATA[[TestResult name=validateSearchHotelTest status=SUCCESS method=ValidateSearchHotelPagePOMUsingPF.validateSearchHotelTest(java.util.HashMap)[pri:0, instance:com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF@2aa6311a] output={null}]]]>
               </value>
             </param>
           </params>
@@ -35,15 +35,15 @@
         </test-method> <!-- closeBrowser -->
       </class> <!-- com.adactinhotelapp.tests.ValidateSearchHotelPagePOMUsingPF -->
       <class name="com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@5dafbe45]" started-at="2025-09-26T21:16:20 IST" name="setUp" finished-at="2025-09-26T21:16:20 IST" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@706eab5d]" started-at="2025-09-29T20:56:00 IST" name="setUp" finished-at="2025-09-29T20:56:00 IST" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@5dafbe45]" started-at="2025-09-26T21:16:21 IST" name="appLaunch" finished-at="2025-09-26T21:16:31 IST" duration-ms="9799" status="PASS">
+        <test-method is-config="true" signature="appLaunch()[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@706eab5d]" started-at="2025-09-29T20:56:01 IST" name="appLaunch" finished-at="2025-09-29T20:56:06 IST" duration-ms="4338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appLaunch -->
-        <test-method signature="validateLoginTest(java.util.HashMap)[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@5dafbe45]" started-at="2025-09-26T21:16:31 IST" name="validateLoginTest" data-provider="getTestData" finished-at="2025-09-26T21:16:33 IST" duration-ms="1981" status="PASS">
+        <test-method signature="validateLoginTest(java.util.HashMap)[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@706eab5d]" started-at="2025-09-29T20:56:06 IST" name="validateLoginTest" data-provider="getTestData" finished-at="2025-09-29T20:56:08 IST" duration-ms="1734" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,18 +54,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginTest -->
-        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@5dafbe45]" started-at="2025-09-26T21:16:33 IST" name="closeBrowser" finished-at="2025-09-26T21:16:36 IST" duration-ms="3403" status="PASS">
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@706eab5d]" started-at="2025-09-29T20:56:08 IST" name="closeBrowser" finished-at="2025-09-29T20:56:11 IST" duration-ms="3392" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateLoginTest status=SUCCESS method=ValidateLoginUsingPOMUsingPF.validateLoginTest(java.util.HashMap)[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@5dafbe45] output={null}]]]>
+                <![CDATA[[TestResult name=validateLoginTest status=SUCCESS method=ValidateLoginUsingPOMUsingPF.validateLoginTest(java.util.HashMap)[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@706eab5d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@5dafbe45]" started-at="2025-09-26T21:16:53 IST" name="teardown" finished-at="2025-09-26T21:16:56 IST" duration-ms="3010" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.adactinhotelapp.tests.ValidateLoginUsingPOMUsingPF@706eab5d]" started-at="2025-09-29T20:56:20 IST" name="teardown" finished-at="2025-09-29T20:56:23 IST" duration-ms="3013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

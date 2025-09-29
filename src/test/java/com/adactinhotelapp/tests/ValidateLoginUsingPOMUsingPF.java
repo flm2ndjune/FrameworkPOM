@@ -12,8 +12,13 @@ import com.adactinhotelapp.constants.AppConstants;
 import com.adactinhotelapp.pages.LoginPage;
 import com.adactinhotelapp.utils.ExcelUtils;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+
 public class ValidateLoginUsingPOMUsingPF extends BaseTest {
 	
+	@Description("This is for validating Login using valid credentials")
+	@Epic("ADA-1 Authentication")
 	@Test(dataProvider = "getTestData")
 	public void validateLoginTest(HashMap<String, String> dataMap)
 	{
